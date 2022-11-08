@@ -13,9 +13,22 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('practice', function (Blueprint $table) {
-            $table->id();
+        Schema::create('practica', function (Blueprint $table) {
+            $table->id('ID_Practica');
             $table->timestamps();
+            $table -> string('nombrePractica');
+            $table -> string('gradoComplejidad');
+            $table -> string('enfoque');
+            $table -> date('fechaRegistro');
+            $table -> string('tiempoLimite');
+            $table -> text('descripcionPractica');
+            $table -> string('objetivo');
+            $table -> string('lenguajeDeProgramacion');
+
+
+            //llavez foraneas
+            $table -> unsignedBigInteger('ID_Usuario') -> nullable();
+            $table -> foreign('ID_Usuario') -> references('id') -> on('users');
         });
     }
 

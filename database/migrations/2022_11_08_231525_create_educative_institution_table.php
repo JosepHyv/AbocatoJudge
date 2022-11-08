@@ -13,8 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('educative_institution', function (Blueprint $table) {
-            $table->id("ID_institucion");
+        Schema::create('institucion_educativa', function (Blueprint $table) {
+            $table->id("ID_Institucion");
             $table -> string("nombre");
             $table -> string("estado");
             $table -> integer("numeroTotalEstudiantes") -> index();
