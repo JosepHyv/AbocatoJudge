@@ -16,19 +16,19 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table -> string('apellidoMaterno');
-            $table -> string('apellidoPaterno');
+            $table -> string('apellidoMaterno') -> nullable();
+            $table -> string('apellidoPaterno') -> nullable();
             $table->string('email')->unique();
             $table->string('password');
-            $table -> double('puntuacionTotal');
-            $table -> date("fechaDeNacimiento");
+            $table -> double('puntuacionTotal') -> nullable();
+            $table -> date("fechaDeNacimiento") -> nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
             $table->rememberToken();
             $table->timestamps();
 
-            
+
         });
     }
 

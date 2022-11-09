@@ -17,8 +17,8 @@ return new class extends Migration
         Schema::table('users', function(Blueprint $table)
         {
             // llaves foraneas
-            $table -> unsignedBigInteger('ID_Institucion');
-            $table -> unsignedBigInteger('ID_Rol');
+            $table -> unsignedBigInteger('ID_Institucion') -> nullable();
+            $table -> unsignedBigInteger('ID_Rol') -> nullable();
 
             $table -> foreign('ID_Institucion') -> references('ID_Institucion') -> on('institucion_educativa');
             $table -> foreign('ID_Rol') -> references('ID_Rol') -> on('rol');
