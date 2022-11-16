@@ -40,7 +40,19 @@
                 @endif
 
                 <x-jet-button class="ml-4">
-                    {{ __('Log in') }}
+                    {{ __('Iniciar Sesion') }}
+                </x-jet-button>
+
+
+            </div>
+
+        </form>
+        <hr class="m-8"/>
+        <form method="GET" action="{{ route('register') }}">
+            @csrf
+            <div class="flex flex-col items-center">
+                <x-jet-button>
+                    {{__('Registrarse')}}
                 </x-jet-button>
             </div>
         </form>

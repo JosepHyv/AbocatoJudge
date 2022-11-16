@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg class="w-20 h-20 mx-auto flex justify-between items-center" viewBox="70.502 108.53 357.963 81.98" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg class="w-1/2 justify-between items-center" viewBox="70.502 108.53 357.963 81.98" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
   <defs>
     <linearGradient gradientUnits="userSpaceOnUse" x1="203.682" y1="107.761" x2="203.682" y2="132.737" id="gradient-0">
       <stop offset="0" style="stop-color: rgba(64, 201, 151, 1)"/>
